@@ -1,0 +1,152 @@
+.btn-success-custom {
+    background-color: rgb(121, 28, 79);
+    color: white;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(95, 95, 95);
+    /* Cor de fundo desejada */
+    z-index: 1;
+    /* Certifique-se de que o cabeçalho esteja acima do conteúdo da tabela */
+    color: azure;
+}
+
+
+
+.custom-text {
+    font-size: 18px;
+    /* Defina o tamanho de fonte desejado, como 18 pixels */
+    /* Outros estilos, se necessário */
+}
+
+
+@keyframes spinner-two {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(359deg)
+    }
+}
+
+.gg-spinner-two {
+    transform: scale(var(--ggs, 1));
+    box-sizing: border-box;
+    position: absolute;
+    /* -display: none; */
+    width: 26px;
+    height: 26px;
+    color: green;
+    margin-left: 15px;
+}
+
+.gg-spinner-two::after,
+.gg-spinner-two::before {
+    box-sizing: border-box;
+    display: block;
+    width: 26px;
+    height: 26px;
+    content: "";
+    position: absolute;
+    border-radius: 100px
+}
+
+.gg-spinner-two::before {
+    animation: spinner-two 1s cubic-bezier(.6, 0, .4, 1) infinite;
+    border: 6px solid transparent;
+    border-bottom-color: currentColor;
+    border-top-color: currentColor
+}
+
+.gg-spinner-two::after {
+    border: 6px solid;
+    opacity: .2
+}
+
+#DATA_SELECTOR {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 30px;
+    appearance: none;
+    /* Remove a aparência padrão do sistema operacional */
+    background-color: #fff;
+}
+
+.imgaba {
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Cor de fundo quando o item da lista está ativo */
+.nav.nav-tabs.nav-ellipsis li.active {
+    background-color: #ff0000;
+    /* Substitua com a cor desejada */
+}
+
+/* Cor de fundo quando o item da lista não está ativo */
+.nav.nav-tabs.nav-ellipsis li {
+    background-color: #dddddd;
+    /* Substitua com a cor desejada */
+}
+
+.panel {
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.panel-heading {
+    background-color: #f0f0f0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.minimizar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Estilos para ocultar o conteúdo inicialmente */
+#conteudo-pedidos {
+    display: none;
+}
+
+#btnSummit {
+    margin-top: 5px;
+}
+
+#loadAPI {
+    margin-top: 5px;
+}
+
+label{
+    color: black;
+    font-weight: bold;
+}
+
+#DATA_FIM, #DATA_INI, #buscafornecedor, #buscapedido, #comboCC, #comboFiliais {
+    border: 1px solid black;
+}
+
+#checkbox-1, #checkbox-2, #checkbox-3{
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.painell{
+    background-color: #ff0000;
+}
+
+button{
+    width: 200px;
+    height: 30px;
+}

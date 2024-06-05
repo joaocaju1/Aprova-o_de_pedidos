@@ -1,0 +1,125 @@
+#divCards {
+    max-height: 59vh;
+    overflow-y: auto;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ececec;
+}
+
+.cards {
+    /* background-color: #F3F3F3; */
+    background-color: rgb(244, 244, 244);
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.card-content {
+    flex-grow: 1;
+    display: flex; /* Mudado de flow-root para flex */
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    margin-right: 20px; /* Espaço entre o conteúdo do card e os botões */
+    overflow: hidden; /* Impede que o conteúdo transborde */
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 10px;
+    gap: 20px
+}
+
+.section-header {
+    display: flow-root;
+    flex-wrap: wrap; /* Permite que o conteúdo quebre em várias linhas se necessário */
+    align-items: center; /* Centraliza os itens da seção verticalmente */
+    margin: 3px;
+}
+
+.labels {
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+    white-space: nowrap; /* Impede que o texto da label quebre */
+    overflow: hidden; /* Esconde o overflow de texto */
+    text-overflow: ellipsis; /* Adiciona reticências se o texto for cortado */
+}
+
+.spans {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adiciona reticências se o texto for cortado */
+    max-width: 90%; /* Limita a largura máxima do texto para evitar overflow */
+}
+
+.spansPedido {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adiciona reticências se o texto for cortado */
+    max-width: 90%; /* Limita a largura máxima do texto para evitar overflow */
+}
+
+.spans2 {
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adiciona reticências se o texto for cortado */
+    max-width: 90%; /* Limita a largura máxima do texto para evitar overflow */
+}
+
+
+
+
+.icons {
+    font-style: normal;
+    /* Replace with actual icons */
+    color: #333;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.highlight {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.value-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 2;
+}
+
+.value-section .value {
+    font-size: 1.2em;
+    color: #28a745;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto; /* Garante que os botões fiquem à direita */
+    flex-shrink: 0; /* Impede que a 'div' dos botões encolha */
+    }
+
+
+.buttons .button {
+    flex-grow: 0;
+}
